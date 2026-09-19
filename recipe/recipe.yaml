@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.0"
+  version: "0.2.1"
 
 package:
   name: advect
@@ -9,13 +9,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/advect/advect-${{ version }}.tar.gz
-  sha256: 5e32a63d2809bb9bb9f069f4ba3601be38ceb44649a96e564b92d4162eefb80d
+  sha256: c86c91a4a3b443e5cbcc617d9a5233afe37251834433f154995396adec85b5bd
 
 build:
-  number: 2
+  number: 0
   skip:
     - match(python, '<3.12')
-    - match(python, '>=3.15')
+    - match(python, '>=3.16')
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
