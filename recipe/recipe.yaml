@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.0"
+  version: "0.3.1"
 
 package:
   name: advect
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/advect/advect-${{ version }}.tar.gz
-  sha256: cfd6df295bf1bd6bc4cda47658d1888a071bd28e84d5fef8e1949e083decf93d
+  sha256: 620f47e12413a038c28dbaf6b15fcba45535e1b636b5727e6fe5517e2d3645eb
 
 build:
   number: 0
